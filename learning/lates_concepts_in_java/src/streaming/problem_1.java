@@ -1,0 +1,20 @@
+package streaming;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.OptionalDouble;
+
+public class problem_1 {
+    public static void main(String[] args) {
+     List<Integer> a = List.of(10,20,14,13,15);
+     Double userdata = calculateaverageofthelist(a);
+        System.out.println(userdata);
+    }
+
+    public static Double calculateaverageofthelist(List<Integer> list) {
+        OptionalDouble averagedata = list.stream().mapToInt(Integer::intValue).average();
+        return averagedata.isPresent()?averagedata.getAsDouble():0.0;
+    }
+
+}

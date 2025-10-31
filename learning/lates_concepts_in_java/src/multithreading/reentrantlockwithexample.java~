@@ -1,0 +1,14 @@
+package multithreading;
+
+import java.util.concurrent.locks.ReentrantLock;
+
+public class reentrantlockwithexample {
+    private static ReentrantLock l = new ReentrantLock();
+    public static void main(String[] args) {
+     Thread t1 = new Thread(() ->{
+        l.lock();
+        
+     })
+    }
+
+}

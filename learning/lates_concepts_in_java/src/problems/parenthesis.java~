@@ -1,0 +1,15 @@
+package problems;
+
+public class parenthesis {
+    public static void main(String[] args) {
+     String a = "()[{";
+     Boolean ouput = false;
+     if(a.length()%2==0){
+         ouput=true;
+     }
+        System.out.println(ouput);
+    }
+}
+
+
+

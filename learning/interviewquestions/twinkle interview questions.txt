@@ -1,0 +1,6 @@
+dependency injection
+transaction
+multithreading with example
+what is streaming
+explain how it works 
+what is jpa

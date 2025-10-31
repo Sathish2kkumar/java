@@ -1,0 +1,4 @@
+package com.example.producer_service.service;
+
+public class MessageProducer {
+}

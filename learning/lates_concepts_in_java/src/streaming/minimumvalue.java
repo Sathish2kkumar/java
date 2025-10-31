@@ -1,0 +1,13 @@
+package streaming;
+
+import java.util.List;
+
+public class minimumvalue {
+    public static void main(String[] args) {
+        List<Integer> values = List.of(10,20,50,12);
+        int data = values.stream().min(Integer::min).orElse(0);
+        System.out.println(data);
+    }
+
+
+}

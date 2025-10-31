@@ -1,0 +1,18 @@
+public class A {
+
+    public String sayHello(String name) {
+        return "Hello " + name;
+    }
+
+}
+
+public class B {
+    @Delegate
+    private A a = new A();
+
+    public String sayHello2(String name) {
+        return sayHello(name) + ". My name is Malvin.";
+    }
+}
+
+i can use directly the function of another in class in sprinboot by using this lombok @delegate annotation in java

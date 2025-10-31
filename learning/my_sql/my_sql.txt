@@ -1,0 +1,14 @@
+FOR GETTING the future date by using the DATE_ADD function  
+SELECT * FROM employees WHERE DATE(created_at) = DATE_ADD(CURDATE(),INTERVAL 9 DAY);
+
+FOR FILTER THE Value using the currentdate
+SELECT * FROM employees WHERE DATE(created_at)=CURDATE();
+
+FOR FIlter the data that is greater than the todays date limit 10 day
+SELECT * FROM employeesWHERE DATE(created_at) > CURDATE() AND DATE(created_at) <= DATE_ADD(CURDATE(), INTERVAL 10 DAY);
+
+FOR Getting the datas from currentdate
+SELECT * FROM employees WHERE DATEDIFF(created_at, CURDATE()) = 5;
+
+
+

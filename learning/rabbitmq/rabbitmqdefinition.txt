@@ -1,0 +1,44 @@
+1. Definition:
+RabbitMQ is an open-source message broker that facilitates communication between distributed systems or microservices. It acts as an intermediary, receiving messages from producers and delivering them to consumers. It supports multiple protocols, including AMQP (Advanced Message Queuing Protocol), MQTT, STOMP, and HTTP via plugins, making it versatile for various use cases.
+
+2. Core Components & Concepts:
+
+Producer: An application that sends messages to RabbitMQ.
+
+Exchange: Receives messages from producers and routes them to queues based on predefined rules (bindings).
+
+Exchange Types:
+
+Direct: Routes messages using an exact match on a routing key.
+
+Fanout: Broadcasts messages to all bound queues (e.g., for notifications).
+
+Topic: Routes messages using wildcard patterns in routing keys (e.g., logs.*).
+
+Headers: Routes based on message headers instead of routing keys.
+
+Queue: A buffer that stores messages until they are processed by consumers.
+
+Consumer: An application that receives and processes messages from queues.
+
+Bindings: Rules that link exchanges to queues, defining how messages are routed.
+
+
+3. Key Purposes & Features:
+
+Decoupling Components:
+Producers and consumers operate independently, enhancing system resilience. If one service fails, others continue processing messages.
+
+Asynchronous Communication:
+Enables background task processing (e.g., sending emails, image processing). Users don’t wait for tasks to complete, improving responsiveness.
+
+Load Balancing (Work Queues):
+Distributes tasks among multiple consumers using the Round-Robin method, preventing overload on a single worker.
+
+Fault Tolerance:
+
+Message Persistence: Messages and queues can be marked durable to survive broker restarts.
+
+Acknowledgements: Consumers send acks to confirm message processing. Unacknowledged messages are re-queued.
+
+Dead-Letter Exchanges (DLX): Handles failed messages by rerouting them to a dedicated queue for analysis.

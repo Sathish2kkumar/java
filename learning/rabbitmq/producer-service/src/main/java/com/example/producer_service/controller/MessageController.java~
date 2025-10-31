@@ -1,0 +1,4 @@
+package com.example.producer_service.controller;
+
+public class MessageController {
+}

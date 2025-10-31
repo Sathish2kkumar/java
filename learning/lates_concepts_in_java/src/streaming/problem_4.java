@@ -1,0 +1,13 @@
+package streaming;
+
+import java.util.List;
+
+public class problem_4 {
+    public static void main(String[] args) {
+        List<String> fruits = List.of("apple","mango","apple","grapes","bananas","bananas");
+        System.out.println(removingduplicatevalues(fruits));
+    }
+    public static List<String> removingduplicatevalues(List<String> stringdatas){
+        return stringdatas.stream().distinct().toList();
+    }
+}

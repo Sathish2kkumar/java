@@ -1,0 +1,14 @@
+package streaming;
+
+import java.util.List;
+
+public class problem_2 {
+    public static void main(String[] args) {
+        List<String> values = List.of("apple","orange","tangerine","grapes");
+        System.out.println(convertingdataintouppercase(values));
+    }
+
+    public static List<String> convertingdataintouppercase(List<String> lowercase){
+        return lowercase.stream().map(String::toLowerCase).toList();
+    }
+}

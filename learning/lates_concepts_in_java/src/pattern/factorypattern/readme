@@ -1,0 +1,10 @@
+The Factory Pattern is a creational design pattern used in object-oriented programming to create objects without exposing the creation logic to the client. Instead of calling a constructor directly to create an object, you use a special factory method.
+
+
+Centralizes Object Creation Logic – Instead of creating objects all over your code, you have one centralized method or class responsible for it.
+
+Promotes Loose Coupling – The client code only depends on an interface or abstract class, not the concrete implementation.
+
+Better Maintainability – Easily change object creation logic without affecting other parts of the system.
+
+Scalability – You can introduce new classes without changing the existing codebase much.

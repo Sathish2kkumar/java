@@ -1,0 +1,10 @@
+what is kafka?
+kafka is also known as Event processing platform.kafka is typical used for doing background process without using request and response that's why we are using event processing platform for eg:i am taking uber millions of users will book the taxi at same time in that time request and response will not work as excpected in that scenario we are using kafka  
+
+kafka broker?
+platform to transfer the messages it will consists of topics 
+
+topics?
+
+logical storage of send events 
+

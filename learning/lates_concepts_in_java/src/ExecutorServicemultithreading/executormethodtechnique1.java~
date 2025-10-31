@@ -1,0 +1,28 @@
+package ExecutorServicemultithreading;
+
+import java.util.concurrent.*;
+
+import static java.util.concurrent.Executors.newFixedThreadPool;
+
+public class executormethodtechnique1 {
+    public static void main(String[] args) {
+        int coreCount = Runtime.getRuntime().availableProcessors();
+        System.out.println("cpubalancecount"+coreCount);
+        ExecutorService service = Executors.newFixedThreadPool(100);
+        ExecutorService service1 = Executors.newCachedThreadPool();
+        ScheduledExecutorService service2 = Executors.newScheduledThreadPool(10);
+        service2.scheduleAtFixedRate("dd",15,10, TimeUnit.SECONDS);
+        
+        for(int i=0;i<10000;i++){
+//            System.out.println(i);
+            service.execute(new CpuIntensiveTask());
+        }
+    }
+    static class CpuIntensiveTask implements Runnable{
+        @Override
+        public void run() {
+            System.out.println("hello");
+        }
+    }
+
+}

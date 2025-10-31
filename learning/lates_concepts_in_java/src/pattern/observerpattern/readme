@@ -1,0 +1,11 @@
+The Observer pattern is a behavioral design pattern used to establish a one-to-many dependency between objects,
+so that when one object (the subject) changes state,
+all its dependents (observers) are automatically notified and updated.
+
+
+Advantage	Description
+🔁 Decoupling	Promotes loose coupling between the subject and observers.
+📢 Automatic Notification	Observers are automatically notified of changes in the subject.
+🔄 Scalable	Easy to add or remove observers at runtime without modifying the subject.
+🧱 Reusability	Reusable components since the subject and observers are independent.
+💡 Real-time Update	Ideal for applications requiring real-time data updates (e.g., dashboards, stock tickers).

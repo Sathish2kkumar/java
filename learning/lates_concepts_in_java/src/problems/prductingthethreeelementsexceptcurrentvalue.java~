@@ -1,0 +1,28 @@
+package problems;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class prductingthethreeelementsexceptcurrentvalue {
+    public static void main(String[] args) {
+         int numdata[] = {10,20,14,50,14,15};
+         int target = 3;
+         countingelementsexceptcurrent(numdata,target);
+        System.out.println(countingelementsexceptcurrent(numdata,target));
+    }
+    public static List<Integer> countingelementsexceptcurrent(int [] arr,int target){
+        List<Integer> products = new ArrayList<>();
+
+        for(int i=0;i<arr.length-target;i++){
+           int productsum=0;
+           int currentvalue=i;
+           for(int j=0;j<arr.length;j++){
+               if(j!=currentvalue){
+                   productsum+=arr[j];
+               }
+           }
+           products.add(productsum);
+        }
+        return products;
+    }
+}

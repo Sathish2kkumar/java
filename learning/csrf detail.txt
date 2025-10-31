@@ -1,0 +1,11 @@
+CSRF-Cross site request forgery 
+
+what is csrf why it is used?
+csrf is a kind of security. which means if your logged in with the application then it will create a session for that particular login now your triggering the another api by using that session what if the third party got that session id and get the  related data from  db/update already exists in that case  csrf plays a vital role which means it creates a csrf token everytime your triggering the api so that third application can't have the access for your application.this csrf token is generated only for create,update,delete not for read
+
+
+
+servlet 
+
+the request which your triggering will first go to the servlet then only it will go to the controller 
+spring security is one of servlet which is used for authentication

@@ -1,0 +1,8 @@
+ When to Use the Adapter Pattern?
+You want to use a class, but its interface is incompatible with your code.
+
+You want to reuse existing code without modifying it.
+
+You're working with legacy code or third-party libraries.
+
+The Adapter Pattern is a structural design pattern that allows objects with incompatible interfaces to work together.

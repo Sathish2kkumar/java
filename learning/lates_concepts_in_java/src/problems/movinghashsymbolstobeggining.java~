@@ -1,0 +1,26 @@
+package problems;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class movinghashsymbolstobeggining {
+    public static void main(String[] args) {
+        String datas = "t#1#th#";
+        StringBuilder encryptdata = new StringBuilder();
+        StringBuilder normaldata = new StringBuilder();
+        for(char a : datas.toCharArray()){
+            if(a=='#'){
+                encryptdata.append(a);
+            }
+            else{
+                normaldata.append(a);
+            }
+        }
+        String userdata = encryptdata.append(normaldata).toString();
+        System.out.println("userdatass"+userdata);
+    }
+
+
+}
