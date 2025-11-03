@@ -1,3 +1,4 @@
+package sealed_package;
 
 public class product {
     private String modelname;

@@ -25,7 +25,7 @@ public class stream_1 {
         System.out.println(str);
         System.out.println("kkk"+maxvalue(d));
         System.out.println("min"+minvalue(d));
-        System.out.println("reverseorder"+reverseorder(d));
+//        System.out.println("reverseorder"+reverseorder(d));
 
 //        System.out.println(variable);
         //this is called stream the code readability is more flexible and fetches the data fastly the looping runs fastly
@@ -39,8 +39,8 @@ public class stream_1 {
     public static int minvalue(List<Integer> arr){
         return arr.stream().collect(Collectors.minBy(Comparator.naturalOrder())).orElse(0);
     }
-    public static List<Integer> reverseorder(List<Integer> arr){
-        return arr.reversed();
-    }
+//    public static List<Integer> reverseorder(List<Integer> arr){
+//        return arr.reversed();
+//    }
 
 }

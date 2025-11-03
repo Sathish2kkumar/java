@@ -9,7 +9,7 @@ public class reversethestring {
                 Collectors.toList(),
                 list->
                 {
-                    list.reversed();
+//                    list.reversed();
                     return list.stream().map(String::valueOf).collect(Collectors.joining());
                 }
         ));
