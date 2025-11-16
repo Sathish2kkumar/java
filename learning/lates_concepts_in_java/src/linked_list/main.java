@@ -6,8 +6,10 @@ public class main {
         list.add("sathish");
         list.add("kumar");
         list.add("ramesh");
-        list.display();
-        list.delete("sathish");
+//        list.display();
+//        list.delete("sathish");
+//        list.display();
+        list.reverse();
         list.display();
     }
 }

@@ -8,6 +8,7 @@ import java.util.List;
 public class comparatorexample implements Comparable<Integer> {
     Integer value;
     public comparatorexample(int value) {
+
         this.value = value;
     }
     public int compareTo(comparatorexample other) {

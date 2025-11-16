@@ -1,0 +1,6 @@
+second highest values
+SELECT * FROM employees ORDERBY salary DESC LIMIT 1 OFFSET 1;
+give employees whose salay is greater then average salary
+SELECT * FROM employees WHERE salary>(SELECT AVG(salary) FROM employee)
+give employees list who are all having the same salary
+SELECT e1.salary FROM employee e1 JOIN employee e2 ON e1.salary=e2.salary AND e1.salary<>e2.salary;
