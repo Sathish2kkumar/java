@@ -37,7 +37,7 @@ public class linked_list {
             return;
         }
         Node current = FirstNode;
-        while (current.next != null && !current.next.equals(data)) {
+        while (current.next != null && !current.next.data.equals(data)) {
             current = current.next;
             System.out.println();
         }

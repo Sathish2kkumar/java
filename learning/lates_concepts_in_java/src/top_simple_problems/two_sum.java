@@ -8,7 +8,7 @@ import java.util.Map;
 public class two_sum {
     public static void main(String[] args) {
         int a [] ={2,5,8,10,9};
-        int target = 1;
+        int target = 7;
         Map<Integer,Integer> complimentdata = new HashMap<>();
         List<Integer> output = new ArrayList<>();
         for(int i=0;i<a.length;i++){
