@@ -9,5 +9,7 @@ public class count_the_number_of_strings {
         char a = 'a';
         Long count = userdata.stream().filter(data->data.startsWith("a")).count();
         System.out.println(count);
+
+
     }
 }
